@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Theme Toggle Logic
   // -------------------------------------------------------------
   const themeToggleBtn = document.getElementById('theme-toggle');
-  const currentTheme = localStorage.getItem('theme') || 'dark';
+  const currentTheme = localStorage.getItem('theme') || 'light';
   
   // Apply theme on load
   document.documentElement.setAttribute('data-theme', currentTheme);

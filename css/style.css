@@ -7,7 +7,44 @@
    Design Tokens & CSS Variables
 ------------------------------------------------------------- */
 :root {
-  /* Colors - Dark Mode (Default) */
+  /* Colors - Light Mode (Default) - Sleek, Vibrant & Modern */
+  --bg-primary: #f8fafc;
+  --bg-secondary: #f1f5f9;
+  --bg-card: rgba(255, 255, 255, 0.75);
+  --bg-card-hover: rgba(255, 255, 255, 0.95);
+  --border-color: rgba(15, 23, 42, 0.06);
+  --border-color-hover: rgba(8, 145, 178, 0.3);
+  
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  
+  --accent-primary: #0891b2; /* Vibrant Cyan-Teal */
+  --accent-primary-rgb: 8, 145, 178;
+  --accent-secondary: #4f46e5; /* Vibrant Indigo-Purple */
+  --accent-secondary-rgb: 79, 70, 229;
+  
+  --terminal-header: #e2e8f0;
+  --terminal-bg: rgba(255, 255, 255, 0.95);
+  
+  --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 8px 30px rgba(15, 23, 42, 0.06);
+  --shadow-lg: 0 16px 40px rgba(15, 23, 42, 0.1);
+  --glow-shadow: 0 0 20px rgba(8, 145, 178, 0.1);
+
+  /* Fonts */
+  --font-headings: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'Fira Code', monospace;
+  
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark Mode Variables Override */
+[data-theme="dark"] {
   --bg-primary: #060814;
   --bg-secondary: #0c102b;
   --bg-card: rgba(18, 24, 58, 0.4);
@@ -31,43 +68,6 @@
   --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.6);
   --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.7);
   --glow-shadow: 0 0 20px rgba(0, 240, 255, 0.15);
-
-  /* Fonts */
-  --font-headings: 'Space Grotesk', sans-serif;
-  --font-body: 'Inter', sans-serif;
-  --font-mono: 'Fira Code', monospace;
-  
-  /* Transitions */
-  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Light Mode Variables Override */
-[data-theme="light"] {
-  --bg-primary: #f8fafc;
-  --bg-secondary: #f1f5f9;
-  --bg-card: rgba(255, 255, 255, 0.75);
-  --bg-card-hover: rgba(255, 255, 255, 0.95);
-  --border-color: rgba(0, 0, 0, 0.06);
-  --border-color-hover: rgba(13, 148, 136, 0.3);
-  
-  --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --text-muted: #64748b;
-  
-  --accent-primary: #0d9488;
-  --accent-primary-rgb: 13, 148, 136;
-  --accent-secondary: #7c3aed;
-  --accent-secondary-rgb: 124, 58, 237;
-  
-  --terminal-header: #e2e8f0;
-  --terminal-bg: rgba(248, 250, 252, 0.95);
-  
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.12);
-  --glow-shadow: 0 0 20px rgba(13, 148, 136, 0.1);
 }
 
 /* -------------------------------------------------------------
@@ -363,11 +363,11 @@ input, textarea, button {
   display: none;
 }
 
-[data-theme="light"] .theme-toggle-btn .moon-icon {
+[data-theme="dark"] .theme-toggle-btn .moon-icon {
   display: none;
 }
 
-[data-theme="light"] .theme-toggle-btn .sun-icon {
+[data-theme="dark"] .theme-toggle-btn .sun-icon {
   display: block;
 }
 
@@ -404,11 +404,11 @@ input, textarea, button {
   background-image: linear-gradient(rgba(var(--bg-primary), 0.8), var(--bg-primary)), url('../assets/hero-bg.png');
   background-size: cover;
   background-position: center;
-  opacity: 0.35;
+  opacity: 0.15;
 }
 
-[data-theme="light"] .hero-bg {
-  opacity: 0.15;
+[data-theme="dark"] .hero-bg {
+  opacity: 0.35;
 }
 
 .hero-grid {
@@ -499,14 +499,14 @@ input, textarea, button {
   background: var(--terminal-bg);
   padding: 20px;
   overflow-y: auto;
-  color: #38bdf8;
+  color: #0d9488;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-[data-theme="light"] .terminal-body {
-  color: #0d9488;
+[data-theme="dark"] .terminal-body {
+  color: #38bdf8;
 }
 
 .terminal-welcome {
@@ -815,13 +815,13 @@ input, textarea, button {
 .skill-bar-bg {
   width: 100%;
   height: 6px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(0, 0, 0, 0.05);
   border-radius: 3px;
   overflow: hidden;
 }
 
-[data-theme="light"] .skill-bar-bg {
-  background: rgba(0, 0, 0, 0.05);
+[data-theme="dark"] .skill-bar-bg {
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .skill-bar-fill {
@@ -1013,7 +1013,7 @@ input, textarea, button {
 
 .form-control {
   width: 100%;
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(0, 0, 0, 0.02);
   border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 12px 16px;
@@ -1022,8 +1022,8 @@ input, textarea, button {
   transition: all var(--transition-normal);
 }
 
-[data-theme="light"] .form-control {
-  background: rgba(0, 0, 0, 0.02);
+[data-theme="dark"] .form-control {
+  background: rgba(255, 255, 255, 0.03);
 }
 
 .form-control:focus {
