@@ -1,10 +1,467 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="dark">
 <head>
-  <title>My Personal Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chanda | Principal Architect & Tech Leader</title>
+  <meta name="description" content="Personal portfolio of Chanda, a veteran software architect and tech leader with 20+ years of experience engineering high-scale distributed systems and leading teams.">
+  
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- FontAwesome for Premium Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <h1>Hello, I'm Chanda</h1>
-  <p>Welcome to my website.</p>
+
+  <!-- -------------------------------------------------------------
+       Navbar Header
+  ------------------------------------------------------------- -->
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <a href="#home" class="logo" id="logo-link">
+        <span class="logo-dot bg-gradient-accent"></span>
+        CHANDA
+      </a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#skills" class="nav-link">Expertise</a>
+        <a href="#portfolio" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+        
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle mobile menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- -------------------------------------------------------------
+       Hero Section
+  ------------------------------------------------------------- -->
+  <section class="hero-section" id="home">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="hero-pretitle">20+ YEARS IN TECH INDUSTRY</span>
+          <h1 class="hero-title">Engineering <br><span class="text-gradient">High-Scale Platforms</span></h1>
+          <p class="hero-description">
+            I am a veteran software architect and technology leader. Over the past two decades, I've designed and scaled resilient infrastructures, led distributed global engineering teams, and guided executive technology strategies.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Let's Collaborate</a>
+            <a href="#portfolio" class="btn btn-secondary">Explore Projects</a>
+          </div>
+        </div>
+        
+        <div class="hero-terminal">
+          <div class="terminal-window glass-panel">
+            <div class="terminal-header">
+              <div class="terminal-buttons">
+                <span class="terminal-btn terminal-close"></span>
+                <span class="terminal-btn terminal-minimize"></span>
+                <span class="terminal-btn terminal-expand"></span>
+              </div>
+              <span class="terminal-title">guest@turnodo.com: ~</span>
+            </div>
+            <div class="terminal-body" id="terminal-body">
+              <div class="terminal-welcome">
+                Welcome to Chanda's interactive portfolio console.<br>
+                Type 'help' to see list of available commands.<br>&nbsp;
+              </div>
+              
+              <div class="terminal-input-line">
+                <span class="terminal-prompt">></span>
+                <input type="text" id="terminal-input" placeholder="Type a command..." autocomplete="off" autofocus>
+                <span class="terminal-cursor"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- -------------------------------------------------------------
+       About / Profile Section
+  ------------------------------------------------------------- -->
+  <section class="about-section fade-in-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="avatar-wrapper">
+            <img src="assets/avatar.png" alt="Chanda Profile Avatar">
+          </div>
+          <div class="stats-grid">
+            <div class="stat-card glass-panel">
+              <div class="stat-number text-gradient" id="years-stat" data-count="20">0+</div>
+              <div class="stat-label">Years of Experience</div>
+            </div>
+            <div class="stat-card glass-panel">
+              <div class="stat-number text-gradient" id="projects-stat" data-count="50">0+</div>
+              <div class="stat-label">Shipped Products</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-text">
+          <h2 class="section-title">Architecting the Future of Enterprise Technology</h2>
+          <p class="about-paragraph">
+            Throughout my career, I've worked across multiple tech horizons—evolving from writing low-level systems code in C/C++ to designing large-scale cloud services, event-driven architectures, and implementing Zero-Trust enterprise frameworks. My strength lies in bridging the gap between high-level business goals and complex engineering execution.
+          </p>
+          <p class="about-paragraph">
+            I work with growth companies and enterprise brands to build high-performing systems that scale to millions of users, audit infrastructure security, and mentor developers into engineering leaders.
+          </p>
+          
+          <div class="about-bullet-grid">
+            <div class="about-bullet">
+              <span class="about-bullet-icon"><i class="fa-solid fa-server"></i></span>
+              <span>System Design & Cloud scaling</span>
+            </div>
+            <div class="about-bullet">
+              <span class="about-bullet-icon"><i class="fa-solid fa-people-group"></i></span>
+              <span>Team Mentorship & Tech Leadership</span>
+            </div>
+            <div class="about-bullet">
+              <span class="about-bullet-icon"><i class="fa-solid fa-shield-halved"></i></span>
+              <span>Security Audits & Compliance</span>
+            </div>
+            <div class="about-bullet">
+              <span class="about-bullet-icon"><i class="fa-solid fa-lightbulb"></i></span>
+              <span>Advisory & Product Strategy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- -------------------------------------------------------------
+       Career Timeline Section
+  ------------------------------------------------------------- -->
+  <section class="timeline-section fade-in-section" id="experience">
+    <div class="container">
+      <div style="text-align: center;">
+        <h2 class="section-title">20 Years of Innovation</h2>
+        <p class="section-subtitle" style="margin-left: auto; margin-right: auto;">A timeline of key roles and transitions over a two-decade career path in software engineering and technology leadership.</p>
+      </div>
+      
+      <div class="timeline-container">
+        <!-- Milestone 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-panel">
+            <div class="timeline-meta">
+              <span class="timeline-date">2020 - Present</span>
+              <span class="timeline-company">Turnodo & Independent</span>
+            </div>
+            <h3 class="timeline-title-text">Principal Architect & Tech Advisor</h3>
+            <p class="timeline-desc">
+              Providing strategic architectural consulting and fractional CTO advisory for enterprise scale-ups. Leading zero-trust infrastructure initiatives and auditing cloud deployments for high compliance standards.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Milestone 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-panel">
+            <div class="timeline-meta">
+              <span class="timeline-date">2014 - 2020</span>
+              <span class="timeline-company">Enterprise SaaS Provider</span>
+            </div>
+            <h3 class="timeline-title-text">Director of Software Engineering</h3>
+            <p class="timeline-desc">
+              Managed distributed engineering groups totaling 40+ developers. Oversaw the migration of core systems to multi-cloud setups, resulting in a 35% infrastructure cost reduction and a boost to 99.99% system availability.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Milestone 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-panel">
+            <div class="timeline-meta">
+              <span class="timeline-date">2010 - 2014</span>
+              <span class="timeline-company">Scalable Web Systems Inc.</span>
+            </div>
+            <h3 class="timeline-title-text">Tech Lead - Distributed Datastores</h3>
+            <p class="timeline-desc">
+              Led a team of core infrastructure engineers building custom middleware to manage high-throughput data streams. Handled scaling issues for datastores serving over 10 million daily active users.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Milestone 4 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-panel">
+            <div class="timeline-meta">
+              <span class="timeline-date">2006 - 2010</span>
+              <span class="timeline-company">Global Solutions Corp</span>
+            </div>
+            <h3 class="timeline-title-text">Senior Backend Developer</h3>
+            <p class="timeline-desc">
+              Designed and built reliable, low-latency microservices using Java and C++. Integrated early AWS cloud services and developed background processing services.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- -------------------------------------------------------------
+       Expertise Section
+  ------------------------------------------------------------- -->
+  <section class="skills-section fade-in-section" id="skills">
+    <div class="container">
+      <div style="text-align: center;">
+        <h2 class="section-title">Core Competency Matrix</h2>
+        <p class="section-subtitle" style="margin-left: auto; margin-right: auto;">My primary areas of expertise, backed by real-world deployments and decades of technical leadership.</p>
+      </div>
+      
+      <div class="skills-grid">
+        <!-- Category 1: System Design -->
+        <div class="skill-category glass-panel">
+          <div class="skill-category-header">
+            <span class="skill-category-icon"><i class="fa-solid fa-diagram-project"></i></span>
+            <h3>System Architecture</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Distributed System Architecture</span>
+                <span class="skill-percentage">95%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-value="95"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Cloud Operations (AWS / Azure)</span>
+                <span class="skill-percentage">90%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-value="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Database Engineering & Caching</span>
+                <span class="skill-percentage">85%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-value="85"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Category 2: Leadership -->
+        <div class="skill-category glass-panel">
+          <div class="skill-category-header">
+            <span class="skill-category-icon"><i class="fa-solid fa-sliders"></i></span>
+            <h3>Leadership & Strategy</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Team Building & Mentorship</span>
+                <span class="skill-percentage">90%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-value="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Product Delivery & Tech Strategy</span>
+                <span class="skill-percentage">90%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-value="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">SecOps, Audits & Compliance</span>
+                <span class="skill-percentage">80%</span>
+              </div>
+              <div class="skill-bar-bg">
+                <div class="skill-bar-fill" data-value="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- -------------------------------------------------------------
+       Portfolio Section
+  ------------------------------------------------------------- -->
+  <section class="portfolio-section fade-in-section" id="portfolio">
+    <div class="container">
+      <div style="text-align: center;">
+        <h2 class="section-title">Key Projects & Deliverables</h2>
+        <p class="section-subtitle" style="margin-left: auto; margin-right: auto;">A selection of high-impact engineering projects designed, implemented, or overseen during my career.</p>
+      </div>
+      
+      <div class="portfolio-grid">
+        <!-- Project 1 -->
+        <div class="project-card glass-panel">
+          <div class="project-image-wrapper">
+            <img src="assets/project-cloud.png" alt="Cloud Infrastructure Graphic">
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">AWS / Kubernetes</span>
+              <span class="tag">Terraform</span>
+            </div>
+            <h3 class="project-title">Enterprise Cloud Transformation</h3>
+            <p class="project-desc">
+              Oversaw the migration of a legacy monolithic stack to an AWS-hosted Kubernetes platform. Achieved sub-second response times globally and a 40% reduction in cloud hosting bills.
+            </p>
+            <a href="#contact" class="project-link">Request case study <span>&rarr;</span></a>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="project-card glass-panel">
+          <div class="project-image-wrapper">
+            <img src="assets/project-scale.png" alt="Database Node Cluster Graphic">
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Go / Rust</span>
+              <span class="tag">Redis / Kafka</span>
+            </div>
+            <h3 class="project-title">High-Throughput Middleware</h3>
+            <p class="project-desc">
+              Developed custom event-driven message brokers designed to process over 1.2 billion events daily with sub-millisecond tail latencies. Resolves complex data sequencing challenges.
+            </p>
+            <a href="#contact" class="project-link">Request case study <span>&rarr;</span></a>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="project-card glass-panel">
+          <div class="project-image-wrapper">
+            <img src="assets/project-ai.png" alt="Neural Networks Graphic">
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Python / PyTorch</span>
+              <span class="tag">MLOps</span>
+            </div>
+            <h3 class="project-title">AI-Powered Predictive Engine</h3>
+            <p class="project-desc">
+              Designed the backend MLOps data pipeline for a predictive analytics engine, feeding high-throughput database metrics into machine learning models for proactive threat detection.
+            </p>
+            <a href="#contact" class="project-link">Request case study <span>&rarr;</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- -------------------------------------------------------------
+       Contact Section
+  ------------------------------------------------------------- -->
+  <section class="contact-section fade-in-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card glass-panel">
+            <h2 class="contact-heading">Let's Connect</h2>
+            <p class="contact-text">
+              Whether you are looking to scale your core backend architecture, need security and operations compliance auditing, or seek senior technical advisory, I would love to hear from you.
+            </p>
+            
+            <div class="contact-methods">
+              <div class="contact-method-item">
+                <span class="contact-icon-box bg-gradient-accent"><i class="fa-solid fa-envelope"></i></span>
+                <div>
+                  <div class="contact-label">Email</div>
+                  <div class="contact-value">contact@turnodo.com</div>
+                </div>
+              </div>
+              <div class="contact-method-item">
+                <span class="contact-icon-box bg-gradient-accent"><i class="fa-solid fa-location-dot"></i></span>
+                <div>
+                  <div class="contact-label">Location</div>
+                  <div class="contact-value">USA / Hybrid / Remote</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <form class="contact-form glass-panel" id="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Message sending simulation: This template will submit inputs once actual mailer details are configured.');">
+          <h2 class="contact-heading">Send a Message</h2>
+          
+          <div class="form-group-row">
+            <div class="form-group">
+              <label for="form-name">Name</label>
+              <input type="text" id="form-name" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <label for="form-email">Email</label>
+              <input type="email" id="form-email" class="form-control" placeholder="your.name@domain.com" required>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="form-subject">Subject</label>
+            <input type="text" id="form-subject" class="form-control" placeholder="Discussion Topic" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="form-message">Message</label>
+            <textarea id="form-message" class="form-control" placeholder="Hi Chanda, I'd like to discuss a project..." required></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- -------------------------------------------------------------
+       Footer
+  ------------------------------------------------------------- -->
+  <footer class="footer">
+    <div class="container">
+      <div class="logo footer-logo">
+        <span class="logo-dot bg-gradient-accent"></span>
+        CHANDA
+      </div>
+      
+      <div class="footer-socials">
+        <a href="https://github.com/muralichanda" target="_blank" class="social-icon" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://twitter.com" target="_blank" class="social-icon" aria-label="Twitter/X Profile"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+      
+      <div class="footer-copyright">
+        &copy; 2026 Chanda. All rights reserved. | turnodo.com
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
 </body>
 </html>
