@@ -21,6 +21,7 @@ const SITE_CONTENT = {
     bio: `Name: Murali Krishna Chanda
 Role: Principal Engineer & Lead Developer
 Exp:  19+ Years in Software Engineering & Architecture
+Note: Not actively seeking a new role at this time.
 Bio:  A veteran builder specializing in Java, AWS, UI technologies,
       and leading globally distributed engineering teams.`,
     skills: `Technical Skill Set:
