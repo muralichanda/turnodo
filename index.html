@@ -5,14 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Murali Krishna Chanda | Principal Engineer & Lead Developer</title>
   <meta name="description" content="Personal portfolio of Murali Krishna Chanda, a veteran principal engineer and lead developer with 19+ years of experience engineering high-scale Java systems, AWS cloud setups, and leading teams.">
-  
-  <!-- CSS Styles -->
+  <meta name="theme-color" content="#060814">
+  <link rel="canonical" href="https://turnodo.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://turnodo.com/">
+  <meta property="og:title" content="Murali Krishna Chanda | Principal Engineer & Lead Developer">
+  <meta property="og:description" content="Principal engineer and lead developer with 19+ years building high-scale Java systems, AWS cloud platforms, and distributed engineering teams.">
+  <meta property="og:image" content="https://turnodo.com/assets/avatar.png">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@muralichanda">
+  <meta name="twitter:title" content="Murali Krishna Chanda | Principal Engineer & Lead Developer">
+  <meta name="twitter:description" content="Principal engineer and lead developer with 19+ years building high-scale Java systems, AWS cloud platforms, and distributed engineering teams.">
+  <meta name="twitter:image" content="https://turnodo.com/assets/avatar.png">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/avatar.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css">
-  
-  <!-- FontAwesome for Premium Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Murali Krishna Chanda",
+    "jobTitle": "Principal Engineer & Lead Developer",
+    "url": "https://turnodo.com",
+    "email": "muralichanda@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Seattle",
+      "addressRegion": "WA",
+      "addressCountry": "US"
+    },
+    "sameAs": [
+      "https://github.com/muralichanda",
+      "https://www.linkedin.com/in/muralichanda/",
+      "https://x.com/muralichanda"
+    ]
+  }
+  </script>
 </head>
 <body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <!-- -------------------------------------------------------------
        Navbar Header
@@ -39,12 +83,14 @@
           <i class="fa-solid fa-sun sun-icon"></i>
         </button>
         
-        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle mobile menu">
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="nav-menu">
           <i class="fa-solid fa-bars"></i>
         </button>
       </div>
     </div>
   </header>
+
+  <main id="main-content">
 
   <!-- -------------------------------------------------------------
        Hero Section
@@ -59,9 +105,13 @@
           <p class="hero-description">
             I am a Principal Engineer and Lead Developer with over 19 years of hands-on experience in the Java ecosystem, AWS cloud architecture, and UI engineering. I lead distributed teams, design multi-platform applications, and build resilient, secure enterprise services.
           </p>
+          <p class="hero-proof">Leading distributed engineering teams across enterprise cloud platforms.</p>
           <div class="hero-buttons">
             <a href="#contact" class="btn btn-primary">Let's Collaborate</a>
             <a href="#portfolio" class="btn btn-secondary">Explore Projects</a>
+            <a href="assets/resume.pdf" class="btn btn-secondary btn-resume" download>
+              <i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Download Resume
+            </a>
           </div>
         </div>
         
@@ -83,11 +133,12 @@
               
               <div class="terminal-input-line">
                 <span class="terminal-prompt">></span>
-                <input type="text" id="terminal-input" placeholder="Type a command..." autocomplete="off" autofocus>
-                <span class="terminal-cursor"></span>
+                <input type="text" id="terminal-input" placeholder="Type a command..." autocomplete="off" aria-label="Terminal command input">
+                <span class="terminal-cursor" aria-hidden="true"></span>
               </div>
             </div>
           </div>
+          <p class="terminal-hint">Try: <kbd>help</kbd> · <kbd>skills</kbd> · <kbd>experience</kbd> · <kbd>contact</kbd></p>
         </div>
       </div>
     </div>
@@ -101,7 +152,7 @@
       <div class="about-grid">
         <div class="about-visual">
           <div class="avatar-wrapper">
-            <img src="assets/avatar.png" alt="Murali Krishna Chanda Profile Avatar">
+            <img src="assets/avatar.png" alt="Murali Krishna Chanda Profile Avatar" width="400" height="400" fetchpriority="high">
           </div>
           <div class="stats-grid">
             <div class="stat-card glass-panel">
@@ -152,9 +203,9 @@
   ------------------------------------------------------------- -->
   <section class="timeline-section fade-in-section" id="experience">
     <div class="container">
-      <div style="text-align: center;">
+      <div class="section-header">
         <h2 class="section-title">Professional Journey</h2>
-        <p class="section-subtitle" style="margin-left: auto; margin-right: auto;">A timeline of key roles and transitions over my software engineering and tech leadership career.</p>
+        <p class="section-subtitle section-subtitle--centered">A timeline of key roles and transitions over my software engineering and tech leadership career.</p>
       </div>
       
       <div class="timeline-container">
@@ -196,9 +247,9 @@
   ------------------------------------------------------------- -->
   <section class="skills-section fade-in-section" id="skills">
     <div class="container">
-      <div style="text-align: center;">
+      <div class="section-header">
         <h2 class="section-title">Core Competency Matrix</h2>
-        <p class="section-subtitle" style="margin-left: auto; margin-right: auto;">My primary areas of expertise, backed by real-world deployments and decades of technical leadership.</p>
+        <p class="section-subtitle section-subtitle--centered">My primary areas of expertise, backed by real-world deployments and decades of technical leadership.</p>
       </div>
       
       <div class="skills-grid">
@@ -212,28 +263,28 @@
             <div class="skill-item">
               <div class="skill-info">
                 <span class="skill-name">Java Ecosystem & Spring Boot</span>
-                <span class="skill-percentage">95%</span>
+                <span class="skill-level skill-level--primary">Primary</span>
               </div>
               <div class="skill-bar-bg">
-                <div class="skill-bar-fill" data-value="95"></div>
+                <div class="skill-bar-fill" data-level="primary"></div>
               </div>
             </div>
             <div class="skill-item">
               <div class="skill-info">
                 <span class="skill-name">AWS Cloud (Lambda, API Gateway)</span>
-                <span class="skill-percentage">90%</span>
+                <span class="skill-level skill-level--primary">Primary</span>
               </div>
               <div class="skill-bar-bg">
-                <div class="skill-bar-fill" data-value="90"></div>
+                <div class="skill-bar-fill" data-level="primary"></div>
               </div>
             </div>
             <div class="skill-item">
               <div class="skill-info">
                 <span class="skill-name">Databases & Messaging (Kafka, NoSQL)</span>
-                <span class="skill-percentage">85%</span>
+                <span class="skill-level skill-level--strong">Strong</span>
               </div>
               <div class="skill-bar-bg">
-                <div class="skill-bar-fill" data-value="85"></div>
+                <div class="skill-bar-fill" data-level="strong"></div>
               </div>
             </div>
           </div>
@@ -249,28 +300,28 @@
             <div class="skill-item">
               <div class="skill-info">
                 <span class="skill-name">UI Technologies (Angular, React, Node)</span>
-                <span class="skill-percentage">90%</span>
+                <span class="skill-level skill-level--strong">Strong</span>
               </div>
               <div class="skill-bar-bg">
-                <div class="skill-bar-fill" data-value="90"></div>
+                <div class="skill-bar-fill" data-level="strong"></div>
               </div>
             </div>
             <div class="skill-item">
               <div class="skill-info">
                 <span class="skill-name">Agile Leadership & Mentorship</span>
-                <span class="skill-percentage">90%</span>
+                <span class="skill-level skill-level--primary">Primary</span>
               </div>
               <div class="skill-bar-bg">
-                <div class="skill-bar-fill" data-value="90"></div>
+                <div class="skill-bar-fill" data-level="primary"></div>
               </div>
             </div>
             <div class="skill-item">
               <div class="skill-info">
                 <span class="skill-name">DevOps, Docker, CI/CD & Security</span>
-                <span class="skill-percentage">85%</span>
+                <span class="skill-level skill-level--strong">Strong</span>
               </div>
               <div class="skill-bar-bg">
-                <div class="skill-bar-fill" data-value="85"></div>
+                <div class="skill-bar-fill" data-level="strong"></div>
               </div>
             </div>
           </div>
@@ -284,16 +335,16 @@
   ------------------------------------------------------------- -->
   <section class="portfolio-section fade-in-section" id="portfolio">
     <div class="container">
-      <div style="text-align: center;">
+      <div class="section-header">
         <h2 class="section-title">Key Projects & Deliverables</h2>
-        <p class="section-subtitle" style="margin-left: auto; margin-right: auto;">A selection of high-impact engineering projects designed, implemented, or overseen during my career.</p>
+        <p class="section-subtitle section-subtitle--centered">A selection of high-impact engineering projects designed, implemented, or overseen during my career.</p>
       </div>
       
       <div class="portfolio-grid">
         <!-- Project 1 -->
         <div class="project-card glass-panel">
           <div class="project-image-wrapper">
-            <img src="assets/project-scale.png" alt="Multi-Platform Graphic">
+            <img src="assets/project-scale.png" alt="Multi-Platform Graphic" width="640" height="400" loading="lazy">
           </div>
           <div class="project-content">
             <div class="project-tags">
@@ -304,14 +355,22 @@
             <p class="project-desc">
               Designed application architectures supporting Web, Android, and iOS clients, integrating custom backend microservices with ERP platforms and Salesforce Commerce Cloud.
             </p>
-            <a href="#contact" class="project-link">Request architecture details <span>&rarr;</span></a>
+            <details class="project-details">
+              <summary>Architecture highlights</summary>
+              <ul>
+                <li>Unified API layer for web and mobile clients</li>
+                <li>ERP and Salesforce Commerce Cloud integration patterns</li>
+                <li>Microservice boundaries aligned to business domains</li>
+              </ul>
+            </details>
+            <a href="mailto:muralichanda@gmail.com?subject=Question%20about%20Multi-Platform%20Integrations" class="project-link">Discuss this project <span>&rarr;</span></a>
           </div>
         </div>
         
         <!-- Project 2 -->
         <div class="project-card glass-panel">
           <div class="project-image-wrapper">
-            <img src="assets/project-cloud.png" alt="Cloud Infrastructure Graphic">
+            <img src="assets/project-cloud.png" alt="Cloud Infrastructure Graphic" width="640" height="400" loading="lazy">
           </div>
           <div class="project-content">
             <div class="project-tags">
@@ -322,14 +381,22 @@
             <p class="project-desc">
               Established robust REST & GraphQL API infrastructure utilizing API Gateway VPC Links, Lambda processing functions, SNS, auto-scaling EC2 groups, and CloudFront static distribution.
             </p>
-            <a href="#contact" class="project-link">Request architecture details <span>&rarr;</span></a>
+            <details class="project-details">
+              <summary>Architecture highlights</summary>
+              <ul>
+                <li>API Gateway with VPC Links for private backend access</li>
+                <li>Lambda-based processing and SNS event workflows</li>
+                <li>CloudFront distribution for static and edge delivery</li>
+              </ul>
+            </details>
+            <a href="mailto:muralichanda@gmail.com?subject=Question%20about%20AWS%20Serverless%20Ecosystem" class="project-link">Discuss this project <span>&rarr;</span></a>
           </div>
         </div>
         
         <!-- Project 3 -->
         <div class="project-card glass-panel">
           <div class="project-image-wrapper">
-            <img src="assets/project-ai.png" alt="Neural Networks Graphic">
+            <img src="assets/project-ai.png" alt="Neural Networks Graphic" width="640" height="400" loading="lazy">
           </div>
           <div class="project-content">
             <div class="project-tags">
@@ -340,7 +407,15 @@
             <p class="project-desc">
               Integrated message workflows with Apache Kafka and Websockets. Engineered CI/CD pipelines (Jenkins, Maven, SonarQube) and set up analytics logs using Splunk and JMeter.
             </p>
-            <a href="#contact" class="project-link">Request architecture details <span>&rarr;</span></a>
+            <details class="project-details">
+              <summary>Architecture highlights</summary>
+              <ul>
+                <li>Real-time messaging via Kafka and Websockets</li>
+                <li>CI/CD with Jenkins, Maven, and SonarQube quality gates</li>
+                <li>Operational visibility through Splunk and JMeter</li>
+              </ul>
+            </details>
+            <a href="mailto:muralichanda@gmail.com?subject=Question%20about%20Messaging%20%26%20Logging%20Core" class="project-link">Discuss this project <span>&rarr;</span></a>
           </div>
         </div>
       </div>
@@ -361,20 +436,20 @@
             </p>
             
             <div class="contact-methods">
-              <div class="contact-method-item">
+              <a href="mailto:muralichanda@gmail.com" class="contact-method-item contact-method-link">
                 <span class="contact-icon-box bg-gradient-accent"><i class="fa-solid fa-envelope"></i></span>
                 <div>
                   <div class="contact-label">Email</div>
                   <div class="contact-value">muralichanda@gmail.com</div>
                 </div>
-              </div>
-              <div class="contact-method-item">
+              </a>
+              <a href="tel:+14022038680" class="contact-method-item contact-method-link">
                 <span class="contact-icon-box bg-gradient-accent"><i class="fa-solid fa-phone"></i></span>
                 <div>
                   <div class="contact-label">Phone</div>
                   <div class="contact-value">402-203-8680</div>
                 </div>
-              </div>
+              </a>
               <div class="contact-method-item">
                 <span class="contact-icon-box bg-gradient-accent"><i class="fa-solid fa-location-dot"></i></span>
                 <div>
@@ -386,17 +461,18 @@
           </div>
         </div>
         
-        <form class="contact-form glass-panel" id="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Message sending simulation: This template will submit inputs once actual mailer details are configured.');">
+        <form class="contact-form glass-panel" id="contact-form" novalidate>
           <h2 class="contact-heading">Send a Message</h2>
+          <p class="form-note">Opens your email client with a pre-filled message.</p>
           
           <div class="form-group-row">
             <div class="form-group">
               <label for="form-name">Name</label>
-              <input type="text" id="form-name" class="form-control" placeholder="Your Name" required>
+              <input type="text" id="form-name" class="form-control" placeholder="Your Name" required autocomplete="name">
             </div>
             <div class="form-group">
               <label for="form-email">Email</label>
-              <input type="email" id="form-email" class="form-control" placeholder="your.name@domain.com" required>
+              <input type="email" id="form-email" class="form-control" placeholder="your.name@domain.com" required autocomplete="email">
             </div>
           </div>
           
@@ -410,11 +486,14 @@
             <textarea id="form-message" class="form-control" placeholder="Hi Murali, I'd like to discuss a project..." required></textarea>
           </div>
           
-          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
+          <button type="submit" class="btn btn-primary btn-full-width">Send Message</button>
         </form>
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- -------------------------------------------------------------
        Footer
@@ -427,18 +506,19 @@
       </div>
       
       <div class="footer-socials">
-        <a href="https://github.com/muralichanda" target="_blank" class="social-icon" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
-        <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://twitter.com" target="_blank" class="social-icon" aria-label="Twitter/X Profile"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://github.com/muralichanda" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/muralichanda/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://x.com/muralichanda" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="X Profile"><i class="fa-brands fa-x-twitter"></i></a>
       </div>
       
       <div class="footer-copyright">
-        &copy; 2026 Murali Krishna Chanda. All rights reserved. | turnodo.com
+        &copy; <span id="footer-year">2026</span> Murali Krishna Chanda. All rights reserved. | turnodo.com
       </div>
     </div>
   </footer>
 
   <!-- Scripts -->
+  <script src="js/site-content.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
