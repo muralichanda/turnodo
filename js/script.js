@@ -124,46 +124,47 @@ document.addEventListener('DOMContentLoaded', () => {
           response = `Available commands:
   bio          Display professional background summary
   skills       View core technical skill sets
-  experience   List major career milestones (20-year timeline)
+  experience   List major career milestones
   projects     Show featured enterprise solutions
   contact      Display communication channels
   clear        Clear the terminal interface`;
           break;
         case 'bio':
-          response = `Name: Chanda (turnodo.com)
-Role: Principal Architect & Tech Leader
-Exp:  20+ Years in Software Engineering & Architecture
-Bio:  A veteran builder specializing in distributed systems, 
-      high scalability infrastructure, and leading high-performing 
-      engineering groups to deliver enterprise products.`;
+          response = `Name: Murali Krishna Chanda
+Role: Principal Engineer & Lead Developer
+Exp:  19+ Years in Software Engineering & Architecture
+Bio:  A veteran builder specializing in Java, AWS, UI technologies, 
+      and leading globally distributed engineering teams.`;
           break;
         case 'skills':
-          response = `Core Technical Stack:
-  - System Design & High Scalability Architecture
-  - Cloud Platforms: AWS, Azure, Google Cloud (GCP)
-  - Distributed Databases, Cache Engineering, Event-Driven Patterns
-  - Security Architecture, compliance, Zero-Trust Frameworks
-  - Strategic Engineering Team Leadership & Tech Advising`;
+          response = `Technical Skill Set:
+  - Backend: Java, Spring Boot, Spring Data, REST/GraphQL APIs
+  - Cloud: AWS (Lambda, API Gateway, CloudFront, EC2, S3), Azure, GCP
+  - Frontend: JavaScript, ReactJS, Angular, Redux, TypeScript, Bootstrap
+  - DevOps: Docker, Kubernetes, CI/CD (Jenkins, Maven, Gradle)
+  - Databases: MongoDB, MySQL, Oracle
+  - Messaging: Apache Kafka, Firebase, Websockets
+  - Observability: Splunk, SonarQube, JMeter, Postman, Swagger`;
           break;
         case 'experience':
-          response = `Career Milestones (2006 - Present):
-  - 2020 - Present : Principal Architect & Tech Advisor
-  - 2014 - 2020     : Director / Principal Software Engineer (Enterprise SaaS)
-  - 2010 - 2014     : Tech Lead - Distributed Datastores & Scalability
-  - 2006 - 2010     : Senior Backend Developer / Infrastructure Engineer`;
+          response = `Professional Experience:
+  - 07/2016 - Present : Principal Engineer / Lead Developer, Seattle, WA
+    Technical Architecture, Release Management, AWS Serverless, team leadership
+  - 01/2007 - 06/2016 : Full Stack Developer / Team Lead, India
+    Full life-cycle development, UI & backend, R&D, mentoring`;
           break;
         case 'projects':
-          response = `Featured Shipped Platforms:
-  1. Enterprise Cloud Migration (10M+ DAU, 99.99% Uptime)
-  2. High-Throughput Distributed Cache Middleware (Sub-ms Latency)
-  3. AI-Powered Predictive Analytics Core Engine`;
+          response = `Key Deliverables:
+  1. Multi-Platform Application Architectures (Web, Android, iOS)
+  2. Enterprise Integration with Salesforce Commerce Cloud ERP
+  3. Scalable AWS API Gateway & Lambda Serverless Infrastructure`;
           break;
         case 'contact':
           response = `Get in Touch:
-  Email    : contact@turnodo.com
-  LinkedIn : linkedin.com/in/muralichanda (Placeholder)
-  GitHub   : github.com/muralichanda (Placeholder)
-  Location : USA / Hybrid`;
+  Email    : muralichanda@gmail.com
+  LinkedIn : linkedin.com (Placeholder)
+  GitHub   : github.com/muralichanda
+  Location : Seattle, WA`;
           break;
         case 'clear':
           // Remove all previous output elements except welcome messages
