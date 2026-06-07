@@ -3,14 +3,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // Theme Toggle Logic
   // -------------------------------------------------------------
   const themeToggleBtn = document.getElementById('theme-toggle');
-  const currentTheme = localStorage.getItem('theme') || 'dimmed';
+  const currentTheme = localStorage.getItem('theme') || 'dark';
   
   // Apply theme on load
   document.documentElement.setAttribute('data-theme', currentTheme);
   
   themeToggleBtn.addEventListener('click', () => {
     const activeTheme = document.documentElement.getAttribute('data-theme');
-    const newTheme = activeTheme === 'light' ? 'dimmed' : 'light';
+    const newTheme = activeTheme === 'light' ? 'dark' : 'light';
     
     document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);

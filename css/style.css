@@ -7,30 +7,30 @@
    Design Tokens & CSS Variables
 ------------------------------------------------------------- */
 :root {
-  /* Colors - Dimmed Slate Mode (Default) - High-End & Soft on the Eyes */
-  --bg-primary: #22272e;        /* Dark Slate Gray */
-  --bg-secondary: #1c2128;      /* Slightly Darker Slate */
-  --bg-card: rgba(45, 51, 59, 0.6); /* Translucent Card panels */
-  --bg-card-hover: rgba(55, 62, 71, 0.8);
-  --border-color: rgba(68, 76, 86, 0.4);
-  --border-color-hover: rgba(83, 155, 245, 0.4); /* Pastel Blue glow */
+  /* Colors - Dark Mode (Default) */
+  --bg-primary: #060814;
+  --bg-secondary: #0c102b;
+  --bg-card: rgba(18, 24, 58, 0.4);
+  --bg-card-hover: rgba(26, 34, 78, 0.6);
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-color-hover: rgba(0, 240, 255, 0.3);
   
-  --text-primary: #adbac7;      /* Softer Light text */
-  --text-secondary: #768390;    /* Muted Blue-Gray text */
-  --text-muted: #57606a;
+  --text-primary: #f3f4f6;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
   
-  --accent-primary: #539bf5;    /* Pastel Blue */
-  --accent-primary-rgb: 83, 155, 245;
-  --accent-secondary: #b392f0;  /* Pastel Lavender */
-  --accent-secondary-rgb: 179, 146, 240;
+  --accent-primary: #00f0ff;
+  --accent-primary-rgb: 0, 240, 255;
+  --accent-secondary: #a370f7;
+  --accent-secondary-rgb: 163, 112, 247;
   
-  --terminal-header: #2d333b;
-  --terminal-bg: rgba(28, 33, 40, 0.95);
+  --terminal-header: #1e264a;
+  --terminal-bg: rgba(7, 9, 26, 0.9);
   
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
-  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.2);
-  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.3);
-  --glow-shadow: 0 0 20px rgba(83, 155, 245, 0.08);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.7);
+  --glow-shadow: 0 0 20px rgba(0, 240, 255, 0.15);
 
   /* Fonts */
   --font-headings: 'Space Grotesk', sans-serif;
@@ -43,30 +43,30 @@
   --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Softer Light Mode Variables Override */
+/* Light Mode Variables Override */
 [data-theme="light"] {
-  --bg-primary: #edf0f3;        /* Soft platinum-zinc, not pure bright white */
-  --bg-secondary: #e2e8f0;      /* Slightly darker slate separator background */
-  --bg-card: rgba(255, 255, 255, 0.8);
+  --bg-primary: #f8fafc;
+  --bg-secondary: #f1f5f9;
+  --bg-card: rgba(255, 255, 255, 0.75);
   --bg-card-hover: rgba(255, 255, 255, 0.95);
-  --border-color: rgba(15, 23, 42, 0.08);
+  --border-color: rgba(0, 0, 0, 0.06);
   --border-color-hover: rgba(13, 148, 136, 0.3);
   
-  --text-primary: #1f2937;      /* Clean Dark text */
-  --text-secondary: #4b5563;    /* Softer body text */
-  --text-muted: #9ca3af;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
   
-  --accent-primary: #0d9488;    /* Muted Teal */
+  --accent-primary: #0d9488;
   --accent-primary-rgb: 13, 148, 136;
-  --accent-secondary: #6d28d9;  /* Muted Indigo-Violet */
-  --accent-secondary-rgb: 109, 40, 217;
+  --accent-secondary: #7c3aed;
+  --accent-secondary-rgb: 124, 58, 237;
   
-  --terminal-header: #d1d5db;
-  --terminal-bg: rgba(243, 244, 246, 0.95);
+  --terminal-header: #e2e8f0;
+  --terminal-bg: rgba(248, 250, 252, 0.95);
   
-  --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.04);
-  --shadow-md: 0 8px 30px rgba(15, 23, 42, 0.06);
-  --shadow-lg: 0 16px 40px rgba(15, 23, 42, 0.08);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.12);
   --glow-shadow: 0 0 20px rgba(13, 148, 136, 0.1);
 }
 
@@ -499,7 +499,7 @@ input, textarea, button {
   background: var(--terminal-bg);
   padding: 20px;
   overflow-y: auto;
-  color: #6cb6ff;
+  color: #38bdf8;
   display: flex;
   flex-direction: column;
   gap: 10px;
