@@ -4,7 +4,7 @@ const SITE_CONTENT = {
   email: 'muralichanda@gmail.com',
   phone: '402-203-8680',
   phoneTel: '+14022038680',
-  location: 'Seattle, WA / Hybrid / Remote',
+  location: 'Omaha, NE / Hybrid / Remote',
   github: 'https://github.com/muralichanda',
   linkedin: 'https://www.linkedin.com/in/muralichanda/',
   twitter: 'https://x.com/muralichanda',
@@ -33,7 +33,7 @@ Bio:  A veteran builder specializing in Java, AWS, UI technologies,
   - Messaging: Apache Kafka, Firebase, Websockets
   - Observability: Splunk, SonarQube, JMeter, Postman, Swagger`,
     experience: `Professional Experience:
-  - 07/2016 - Present : Principal Engineer / Lead Developer, Seattle, WA
+  - 07/2016 - Present : Principal Engineer / Lead Developer, Omaha, NE
     Technical Architecture, Release Management, AWS Serverless, team leadership
   - 01/2007 - 06/2016 : Full Stack Developer / Team Lead, India
     Full life-cycle development, UI & backend, R&D, mentoring`,
