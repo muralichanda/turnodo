@@ -40,29 +40,29 @@
 
 /* Light Mode Variables Override */
 [data-theme="light"] {
-  --bg-primary: #f8fafc;
-  --bg-secondary: #f1f5f9;
-  --bg-card: rgba(255, 255, 255, 0.75);
-  --bg-card-hover: rgba(255, 255, 255, 0.95);
-  --border-color: rgba(0, 0, 0, 0.06);
-  --border-color-hover: rgba(13, 148, 136, 0.3);
+  --bg-primary: #e8e2d9;
+  --bg-secondary: #dfd8cd;
+  --bg-card: rgba(245, 240, 232, 0.7);
+  --bg-card-hover: rgba(245, 240, 232, 0.92);
+  --border-color: rgba(80, 60, 30, 0.12);
+  --border-color-hover: rgba(10, 100, 92, 0.35);
   
-  --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --text-muted: #64748b;
+  --text-primary: #1c1917;
+  --text-secondary: #3b3530;
+  --text-muted: #57524c;
   
-  --accent-primary: #0d9488;
-  --accent-primary-rgb: 13, 148, 136;
-  --accent-secondary: #7c3aed;
-  --accent-secondary-rgb: 124, 58, 237;
+  --accent-primary: #0a7e74;
+  --accent-primary-rgb: 10, 126, 116;
+  --accent-secondary: #6d28d9;
+  --accent-secondary-rgb: 109, 40, 217;
   
-  --terminal-header: #e2e8f0;
-  --terminal-bg: rgba(248, 250, 252, 0.95);
+  --terminal-header: #d4cdc3;
+  --terminal-bg: rgba(232, 226, 217, 0.97);
   
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.12);
-  --glow-shadow: 0 0 20px rgba(13, 148, 136, 0.1);
+  --shadow-sm: 0 2px 8px rgba(60, 40, 10, 0.09);
+  --shadow-md: 0 8px 30px rgba(60, 40, 10, 0.12);
+  --shadow-lg: 0 16px 40px rgba(60, 40, 10, 0.16);
+  --glow-shadow: 0 0 20px rgba(10, 126, 116, 0.1);
 }
 
 /* -------------------------------------------------------------
